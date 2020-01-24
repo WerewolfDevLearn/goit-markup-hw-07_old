@@ -1,0 +1,17 @@
+:root {
+  --main-font: 'Montserrat', 'sans-serif';
+  --secondery-font: 'Roboto', sans-serif;
+  --main-font-size: 14px;
+  ----logo-font-size: 20px;
+  --secon-font-size: 22px;
+  --header-font-size: 30px;
+}
+
+html {
+  box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
