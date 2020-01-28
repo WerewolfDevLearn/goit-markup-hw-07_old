@@ -27,9 +27,11 @@ img {
   display: block;
 }
 .container {
-  max-width: 767px;
+ max-width: 320px;
   padding-left: 16px;
   padding-right: 16px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .hero-header-background {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/mobile-h-photo.png);
@@ -46,8 +48,8 @@ img {
 }
 .logo {
   font-family: var(--main-font);
-  font-weight: 700;
   font-size: var(--logo-font-size);
+  font-weight: 700;
   color: var(--hero-font-color);
   text-transform: uppercase;
   text-decoration: none;
@@ -104,6 +106,7 @@ button.sign-up:focus {
   font-weight: 300;
   text-align: center;
   padding-bottom: 20px;
+  width: 220px;
 }
 .hero a {
   display: flex;
@@ -126,7 +129,6 @@ button.sign-up:focus {
   line-height: 1.2;
 
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 280px;
@@ -165,9 +167,10 @@ button.sign-up:focus {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
   margin-bottom: 30px;
 }
-.partner h3 {
+.name {
   font-family: var(--main-font);
   font-size: var(--main-font-size);
   font-weight: 700;
@@ -175,7 +178,7 @@ button.sign-up:focus {
   margin-top: 23px;
   margin-bottom: 20px;
 }
-.partner p {
+.about-me {
   font-family: var(--secondery-font);
   font-size: var(--main-font-size);
   color: var(--second-site-font-color);
