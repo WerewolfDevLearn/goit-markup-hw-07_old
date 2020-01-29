@@ -7,6 +7,7 @@
   --header-font-size: 30px;
   --p-font-size: 18px;
   --hero-tablet-font-size: 52px;
+  --hero-tablet-p-font-size:24px;
   --hero-font-color: #fff;
   --site-font-color: #333333;
   --second-site-font-color: #666666;
@@ -27,7 +28,7 @@ img {
   display: block;
 }
 .container {
- max-width: 320px;
+  max-width: 320px;
   padding-left: 16px;
   padding-right: 16px;
   margin-left: auto;
@@ -106,7 +107,8 @@ button.sign-up:focus {
   font-weight: 300;
   text-align: center;
   padding-bottom: 20px;
-  width: 220px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 .hero a {
   display: flex;
@@ -114,8 +116,6 @@ button.sign-up:focus {
   font-size: var(--main-font-size);
   text-decoration: none;
   color: var(--hero-font-color);
-  /* margin-left: auto;
-  margin-right: auto; */
 }
 .find:hover,
 .find:focus {
@@ -203,15 +203,20 @@ button.sign-up:focus {
 
   .container {
     max-width: 660px;
-    padding-left: 50px;
-    padding-right: 50px;
     margin-left: auto;
+    margin-right: auto;
+  }
+  
+  }
+  .logo {
     margin-right: auto;
   }
 
   .nav {
+    display: flex;
     flex-direction: row;
     align-items: center;
+    padding-bottom: 154px;
     /* justify-content: center; */
   }
   .user-nav {
@@ -221,9 +226,21 @@ button.sign-up:focus {
   }
   .hero h1 {
     font-size: var(--hero-tablet-font-size);
+    padding-bottom: 45px;
+      }
+  .hero p {
+    padding-bottom: 35px;
+    font-size: var(--hero-tablet-p-font-size);
+  }
+  .button{
+    width:227px ;
+  }
+  .hero{
+    padding-bottom:235px ;
   }
   .partners h2 {
     margin-bottom: 40px;
+    
   }
   .partner-list {
     display: flex;
@@ -242,5 +259,10 @@ button.sign-up:focus {
   .partner {
     margin-right: 20px;
     margin-bottom: 58px;
+  }
+}
+@media screen and (min-width: 960px){
+  .hero-header-background{
+background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/desktop_h_photo.png);
   }
 }
