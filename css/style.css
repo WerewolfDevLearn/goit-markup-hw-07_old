@@ -236,10 +236,15 @@ button.sign-up:focus {
   .violet{
     background-color: #4E73DB;
   }
-  .partner:hover .partner-icon-svg,
+  /* .partner:hover .partner-icon-svg,
   .partner:focus .partner-icon-svg{
     transform: scale(1.25);
+  } */
+  .partner:hover .partner-icon,
+  .partner:focus .partner-icon{
+    transform: scale(1.05);
   }
+
 
 @media screen and (min-width: 768px) {
   .hero-header-background {
