@@ -22,7 +22,7 @@ html {
 *::before {
   box-sizing: inherit;
 }
-img {
+img,use {
   width: 100%;
   height: auto;
   display: block;
@@ -167,8 +167,8 @@ button.sign-up:focus {
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: relative;
   margin-bottom: 30px;
+  
 }
 .name {
   font-family: var(--main-font);
@@ -183,10 +183,12 @@ button.sign-up:focus {
   font-size: var(--main-font-size);
   color: var(--second-site-font-color);
   font-weight: 300;
+  line-height: 1.2;
   text-align: center;
   max-width: 220px;
+
 }
-.partner-link {
+.partner-photo{
   display: block;
   width: 122px;
   height: 122px;
@@ -194,6 +196,51 @@ button.sign-up:focus {
   border-radius: 66px;
   overflow: hidden;
 }
+.partner-link {
+  position: relative;
+}
+.partner-icon{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px; 
+  height: 32px;
+  border: 2px solid var(--hero-font-color);
+  border-radius: 16px;
+  bottom: 0;
+  right: 0;
+  }
+
+  .partner-icon-svg{
+    display: block;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    /* top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%); */
+    transition: transform;
+    transition-duration: 250ms;
+    transition-timing-function:linear ;
+  }
+  .red{
+    background-color:#ff4e50 ;
+  }
+  .cayn{
+    background-color: #1cd7ad;
+  }
+  .dark-yellow{
+    background-color: #FFA507;
+  }
+  .violet{
+    background-color: #4E73DB;
+  }
+  .partner:hover .partner-icon-svg,
+  .partner:focus .partner-icon-svg{
+    transform: scale(1.25);
+  }
+
 @media screen and (min-width: 768px) {
   .hero-header-background {
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/tablet_h_photo.png);
@@ -207,7 +254,7 @@ button.sign-up:focus {
     margin-right: auto;
   }
   
-  }
+  
   .logo {
     margin-right: auto;
   }
@@ -259,10 +306,41 @@ button.sign-up:focus {
   .partner {
     margin-right: 20px;
     margin-bottom: 58px;
+    width: 220px;
   }
 }
-@media screen and (min-width: 960px){
+@media screen and (min-width: 940px){
   .hero-header-background{
-background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/desktop_h_photo.png);
+   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/desktop_h_photo.png);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+  }
+  .container {
+    max-width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  
+  .partner-list {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 40px;
+    max-width: 940px;
+  }
+  .partner {
+    margin-right: 30px;
+    margin-bottom: 0px;
+  }
+  .partner:nth-child(2n) {
+    margin-right: 30px;
+  }
+  .partner:last-child{
+    margin-right: 0px;
   }
 }
